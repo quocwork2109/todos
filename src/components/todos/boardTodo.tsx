@@ -46,7 +46,7 @@ export default function BoardTodo({
                 listTodo.map((todo, index) => {
                   return (
                     <Draggable
-                      key={todo.id as any}
+                      key={String(todo.id)}
                       draggableId={String(todo.id)}
                       index={index}
                     >

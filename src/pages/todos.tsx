@@ -45,7 +45,7 @@ export default function Todos() {
         ...item,
         todos: handleListTodo(item.status)
       }
-    }).reduce((acc: any, item: any) => {
+    }).reduce((acc: any, item: Todo) => {
       const { status, ...rest } = item;
       acc[status] = rest;
       return acc;

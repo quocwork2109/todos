@@ -113,7 +113,7 @@ export default function AddOrDetailModal({ showModal, setShowModal, setListTodo,
     }
   };
 
-  const handleFormData = (e: any) => {
+  const handleFormData = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const name = e.target.name
     const value = e.target.value
     setFormTodo((prev) => {
